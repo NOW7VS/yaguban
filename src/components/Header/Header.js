@@ -65,7 +65,7 @@ function Header() {
             >
               <Box 
                 component={Link}
-                to="home"
+                to="/home"
                 sx={{
                 marginX: '10px',
                 display: 'flex',
@@ -115,6 +115,8 @@ function Header() {
                 color="primary"
                 variant="text"
                 size="small"
+                component={Link}
+                to="/sign-in"
               >
                 로그인
               </Button>
@@ -122,6 +124,8 @@ function Header() {
                 color="primary"
                 variant="contained"
                 size="small"
+                component={Link}
+                to="/sign-up"
               >
                 회원가입
               </Button>

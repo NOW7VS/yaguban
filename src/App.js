@@ -6,6 +6,8 @@ import Header from './components/Header/Header';
 import theme from './theme';
 import HomePage from './pages/HomePage'
 import TeamPage from './pages/TeamPage'
+import SignInPage from './pages/SignInPage'
+import SignUpPage from './pages/SignUpPage'
 
 function App() {
   return (
@@ -17,6 +19,9 @@ function App() {
           <Route path="*" element={<Navigate to="/home" />} />
           <Route path="/home" element={<HomePage />} />
           <Route path="/team" element={<TeamPage />} />
+          <Route path="/sign-in" element={<SignInPage />} />
+          <Route path="/sign-up" element={<SignUpPage />} />
+          <Route path="/findinfo" element={<SignInPage />} />
         </Routes>
       </Router>
     </ThemeProvider>
