@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Container, Typography } from '@mui/material';
 
-const Home = () => {
+const HomePage = () => {
   return (
     <Container> {/* 좌우 패딩 24px */}
       <Box sx={{ padding: '20px' }}>
@@ -29,4 +29,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;

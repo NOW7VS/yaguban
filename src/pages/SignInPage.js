@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Container, Typography } from '@mui/material';
-import SignIn from '../components/sign/SignIn';
+import SignIn from '../components/Sign/SignIn';
 
 const HomePage = () => {
   return (
