@@ -3,7 +3,7 @@ import { AppBar, Toolbar, Button, Container, MenuItem, Typography, Box,} from '@
 import { Link } from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
 import Drawer from './Drawer';
-import menuItems from '../../data/Items';
+import menuItems from '../../data/items';
 import Background from './Background'; // Background 컴포넌트 임포트
 import useToggleDrawer from '../../hooks/useToggleDrawer';
 
@@ -91,16 +91,16 @@ function Header() {
               </Typography>
               <Box sx={{ display: { xs: 'none', md: 'flex' }, alignItems: 'center' }}>
                 {menuItems.map((item) => (
-                  <MenuItem
+                  <Button
                     key={item.text}
                     component={Link}
                     to={item.path}
-                    sx={{ py: '6px', px: '12px' }}
+                    sx={{ py: '6px', px: '12px', textTransform: 'none', transition: 'background-color 0.3s', '&:hover': { backgroundColor: 'rgba(138, 22, 1, 0.1)' } }} // Hover 효과 추가
                   >
                     <Typography variant="body2" color="text.primary">
                       {item.text}
                     </Typography>
-                  </MenuItem>
+                  </Button>
                 ))}
               </Box>
             </Box>
@@ -117,6 +117,7 @@ function Header() {
                 size="small"
                 component={Link}
                 to="/sign-in"
+                sx={{'&:hover': { backgroundColor: 'rgba(138, 22, 1, 0.1)' }}}
               >
                 로그인
               </Button>

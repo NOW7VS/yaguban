@@ -1,8 +1,12 @@
 import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import MainBoard from '../components/Board/MainBoard';
+import PostDetail from '../components/Board/PostDetail';
 import { Box, Container } from '@mui/material';
-import SignUp from '../components/Sign/SignUp';
 
-const HomePage = () => {
+
+
+const CommunityPage = () => {
   return (
     <Box
       sx={{
@@ -21,11 +25,13 @@ const HomePage = () => {
         boxSizing: 'border-box', // padding과 border를 포함하여 box 크기를 설정
       }}
       >
-        <SignUp/>
+        <Routes>
+          <Route path="/" element={<MainBoard />} />
+          <Route path=":postId" element={<PostDetail />} />
+        </Routes>
       </Container>
     </Box>
-
   );
 };
 
-export default HomePage;
+export default CommunityPage;

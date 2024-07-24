@@ -65,7 +65,7 @@ export default function SignUp() {
       name: data.get('name'),
       role: data.get('role'),
       email: data.get('email'),
-      phone: `010-${data.get('phone').replace(/ /g, '')}`, // 전화번호 앞에 010-을 붙여서 저장
+      phone: `010-  ${data.get('phone').replace(/ /g, '')}`, // 전화번호 앞에 010-을 붙여서 저장
       password: data.get('password'),
     });
   };
