@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Container, Typography } from '@mui/material';
+import Players from '../components/Players/Players';
 
 const PlayersPage = () => {
   return (
@@ -20,25 +21,7 @@ const PlayersPage = () => {
         boxSizing: 'border-box', // padding과 border를 포함하여 box 크기를 설정
       }}
       >
-        <Typography variant="h5">PlayersPage</Typography>
-        <Typography>This is the players page.</Typography>
-        <Typography>This is the players page.</Typography>
-        <Typography>This is the players page.</Typography>
-        <Typography>This is the players page.</Typography>
-        <Typography>This is the players page.</Typography>
-        <Typography>This is the players page.</Typography>
-        <Typography>This is the players page.</Typography>
-        <Typography>This is the players page.</Typography>
-        <Typography>This is the players page.</Typography>
-        <Typography>This is the players page.</Typography>
-        <Typography>This is the players page.</Typography>
-        <Typography>This is the players page.</Typography>
-        <Typography>This is the players page.</Typography>
-        <Typography>This is the players page.</Typography>
-        <Typography>This is the players page.</Typography>
-        <Typography>This is the players page.</Typography>
-        <Typography>This is the players page.</Typography>
-        <Typography>This is the players page.</Typography>
+        <Players />
       </Container>
     </Box>
   );
