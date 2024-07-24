@@ -1,8 +1,8 @@
 import React from 'react';
 import { Box, Container } from '@mui/material';
-import SignIn from '../components/Sign/SignIn';
+import SignIn from '../components/sign/SignIn';
 
-const HomePage = () => {
+const SignInPage = () => {
   return (
     <Box
       sx={{
@@ -27,4 +27,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default SignInPage;

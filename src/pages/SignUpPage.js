@@ -1,8 +1,8 @@
 import React from 'react';
 import { Box, Container } from '@mui/material';
-import SignUp from '../components/Sign/SignUp';
+import SignUp from '../components/sign/SignUp';
 
-const HomePage = () => {
+const SignUpPage = () => {
   return (
     <Box
       sx={{
@@ -21,11 +21,11 @@ const HomePage = () => {
         boxSizing: 'border-box', // padding과 border를 포함하여 box 크기를 설정
       }}
       >
-        <SignUp/>
+        <SignUp />
       </Container>
     </Box>
 
   );
 };
 
-export default HomePage;
+export default SignUpPage;

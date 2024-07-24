@@ -3,7 +3,7 @@ import { AppBar, Toolbar, Button, Container, MenuItem, Typography, Box,} from '@
 import { Link } from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
 import Drawer from './Drawer';
-import menuItems from '../../data/items';
+import menuItems from '../../data/Items';
 import Background from './Background'; // Background 컴포넌트 임포트
 import useToggleDrawer from '../../hooks/useToggleDrawer';
 
